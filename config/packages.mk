@@ -25,9 +25,13 @@ PRODUCT_PACKAGES += \
     SimpleGallery \
     Stk \
     stats \
-    ThemePicker \
     ArrowThemesStub \
     GameSpace
+
+ifneq ($(ARROW_GAPPS), true)
+PRODUCT_PACKAGES += \
+    ThemePicker
+endif
 
 # SystemUI plugins
 PRODUCT_PACKAGES += \
