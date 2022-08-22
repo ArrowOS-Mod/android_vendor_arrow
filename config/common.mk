@@ -23,6 +23,11 @@ PRODUCT_PACKAGE_OVERLAYS += \
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
     vendor/arrow/overlay/common
 
+ifeq ($(ARROW_GAPPS), true)
+    PRODUCT_PACKAGE_OVERLAYS := vendor/arrow/overlay_gms/common
+    PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS := vendor/arrow/overlay_gms/common
+endif
+
 # Dex preopt
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     SystemUI \

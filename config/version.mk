@@ -22,7 +22,8 @@ ifeq ($(ARROW_BETA),true)
 endif
 
 ifeq ($(ARROW_GAPPS), true)
-    $(call inherit-product, vendor/gapps/common/common-vendor.mk)
+    $(call inherit-product, vendor/gms/gms_full.mk)
+    $(call inherit-product, vendor/arrow/rro_overlays/rro_overlays.mk)
     ARROW_BUILD_ZIP_TYPE := GAPPS
 endif
 
