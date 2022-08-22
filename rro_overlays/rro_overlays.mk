@@ -17,6 +17,8 @@
 # Arrow OS Overlays
 PRODUCT_PACKAGES += \
     ArrowConfigOverlay \
+    GmsConfigOverlay \
+    TelecommConfigOverlay \
     PixelLauncherCustomOverlay \
     PixelSetupWizardOverlayArrow \
     SettingsGoogleOverlayArrow
